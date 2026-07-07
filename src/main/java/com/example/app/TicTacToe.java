@@ -2,6 +2,8 @@ package com.example.app;
 
 import java.util.Scanner;
 
+
+
 public class TicTacToe {
 
     private static final String PLAYER_ONE_SYMBOL = "🐔";
@@ -29,6 +31,7 @@ public class TicTacToe {
         while (true) {
             printBoard();
             System.out.print("Player " + currentSymbol + "'s turn, pick a spot (1-9): ");
+            System.out.print("For " + currentSymbol + "'s turn, tell them they're cool: ");
             int choice = readValidMove();
             int row = (choice - 1) / BOARD_SIZE;
             int col = (choice - 1) % BOARD_SIZE;
